@@ -216,8 +216,6 @@ var changeEffect = function (evt) {
 
 effectsList.addEventListener('click', changeEffect); // обработчик изменения эффекта картинки редактирования
 
-
-
 // Валидация хэштэгов (событие input в обработчике работает как change (возможно из-за старой версии хрома) ==================
 
 var textHashtags = imgUploadOverlay.querySelector('.text__hashtags'); // поле ввода хэштэгов
@@ -240,7 +238,7 @@ var checkingValidityHashtags = function () {
     }
   } // проверяем наличие одинаковых хэштэгов
 
-  for ( i = 0; i < arrTextHashtags.length; i++) {
+  for (i = 0; i < arrTextHashtags.length; i++) {
     if (textHashtags.value !== '') {
       if (!re.test(arrTextHashtags[i])) {
         textHashtags.style.border = '5px solid red';
@@ -289,9 +287,9 @@ textDescription.addEventListener('blur', function () {
 
 var imgUploadEffectLevel = imgUploadOverlay.querySelector('.img-upload__effect-level'); // блок слайдера fieldset
 var effectLevelValue = imgUploadOverlay.querySelector('.effect-level__value'); // инпут глубины эффекта
-//var effectLevelLine = imgUploadOverlay.querySelector('.effect-level__line'); // шкала глубины эффекта
+// var effectLevelLine = imgUploadOverlay.querySelector('.effect-level__line'); // шкала глубины эффекта
 var effectLevelPin = imgUploadOverlay.querySelector('.effect-level__pin'); // ползунок
-//var effectLevelDepth = imgUploadOverlay.querySelector('.effect-level__depth'); // глубина эффекта
+// var effectLevelDepth = imgUploadOverlay.querySelector('.effect-level__depth'); // глубина эффекта
 var imageUploadPreviewElement = imgUploadOverlay.querySelector('.img-upload__preview').querySelector('img'); // img предварительного просмотра фото
 
 
@@ -302,7 +300,7 @@ var calculatingEffectValue = function (value, min, max) {
 
 var changeIntensityEffect = function () {
   var effect = document.querySelector('.effects__radio:checked').value; // значение у нажатой кнопки эффекта
-  if (effect === 'none') {           
+  if (effect === 'none') {
     imageUploadPreviewElement.style.filter = '';
   } else {
     var selectedEffectSettings = EFFECTS_SETTINGS[effect];
