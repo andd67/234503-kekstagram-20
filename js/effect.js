@@ -67,7 +67,7 @@ window.effect = (function () {
   effectsList.addEventListener('click', changeEffect); // обработчик изменения эффекта картинки редактирования
 
   // Слайдер ==================================================================================================================
-  
+
   var effectLevelValue = imgUploadOverlay.querySelector('.effect-level__value'); // инпут глубины эффекта
   // var effectLevelLine = imgUploadOverlay.querySelector('.effect-level__line'); // шкала глубины эффекта
   var effectLevelPin = imgUploadOverlay.querySelector('.effect-level__pin'); // ползунок
