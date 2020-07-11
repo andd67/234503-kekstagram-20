@@ -1,6 +1,6 @@
 'use strict';
 
-window.data = (function() {  
+window.data = (function() {
   var MIN_NUNBER_LIKES = 15; // минимальное число лайков
   var MAX_NUNBER_LIKES = 200; // максимальное число лайков
   var COMMENTS = [
@@ -20,7 +20,7 @@ window.data = (function() {
     'Фатима',
     'Владимир Владимирович',
     'Тутанхамон'
-  ]; // массив имён  
+  ]; // массив имён
 
   var getRandomNumberRange = function (min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
@@ -62,5 +62,5 @@ window.data = (function() {
 
   return {
     generateArrayPhoto: generateArrayPhoto
-  }
+  };
 })();

@@ -42,5 +42,5 @@ window.form = (function () {
 
   return {
     onEditFormEscClose: onEditFormEscClose
-  }
+  };
 })();
