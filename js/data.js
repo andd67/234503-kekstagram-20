@@ -1,6 +1,6 @@
 'use strict';
 
-window.data = (function() {
+window.data = (function () {
   var MIN_NUNBER_LIKES = 15; // минимальное число лайков
   var MAX_NUNBER_LIKES = 200; // максимальное число лайков
   var COMMENTS = [
